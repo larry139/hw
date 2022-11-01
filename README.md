@@ -1,4 +1,5 @@
 
++public  -private #protected
 ```js
 abstract class Shape
 {
@@ -7,13 +8,9 @@ abstract class Shape
 
 class Rectangle implements Shape
 {
-        public abstract double length();
-        public abstract double width();
-        public HourlyEmployee(double length, double width)
-        {
-            h=hour;
-            w = hourlyWage;
-        }
+        private abstract double length();
+        private  abstract double width();
+        
         public double getArea(){
         }
         public double toString(){
@@ -22,8 +19,11 @@ class Rectangle implements Shape
 
 class Triangle implements Shape
 {
-        public abstract double base();
-        public abstract double height();
+        private abstract double base();
+        private abstract double height();
+        
+        public double getArea(){
+        }
         public double Salary(){
         }
         
